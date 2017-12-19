@@ -1,0 +1,9 @@
+kdb:
+  image: prologic/kdb
+  volumes:
+    - kdb-vol:/etc/kdb
+  environment:
+    - PORT=${KDB_PORT}
+    - VIRTUALHOST=${KDB_VIRTUALHOST}
+  command: --config=/etc/kdb/kdb.ini
+  restart: always

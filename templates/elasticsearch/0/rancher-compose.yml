@@ -1,0 +1,11 @@
+.catalog:
+  name: Elasticsearch
+  version: latest
+  uuid: elasticsearch-0
+  questions:
+  - variable: ES_PORT
+    description: 'Elasticsearch exposed port'
+    label: 'Port:'
+    required: true
+    default: 9200
+    type: int

@@ -1,0 +1,15 @@
+postgres:
+  image: postgres:9.6.5
+  restart: always
+  environment:
+    POSTGRES_DB: ${dbname}
+    POSTGRES_USER: ${dbuser}
+    POSTGRES_PASSWORD: ${dbpassword}
+  volumes:
+    - postgres-vol:/var/lib/postgresql/data
+
+adminer:
+  image: adminer
+  restart: always
+  ports:
+    - ${uiport}:8080
