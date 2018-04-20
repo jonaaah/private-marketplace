@@ -25,11 +25,11 @@
     description: 'MySQL password'
     label: 'Password:'
     required: true
-    default: password
+    default: loopedge-s3cr3t!
     type: string
   - variable: MYSQL_ROOT_PASSWORD
     description: 'MySQL root password'
     label: 'MySQL password:'
     required: true
-    default: s3Cr3T!
+    default: loopedge-s3cr3t!
     type: string
