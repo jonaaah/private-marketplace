@@ -1,5 +1,5 @@
 mysql:
-  image: mysql:latest
+  image: mysql:5.7.22
   ports:
     - ${MYSQL_PORT}:3306/tcp
   environment:
