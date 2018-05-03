@@ -1,9 +1,15 @@
-mssql:
-  image: microsoft/mssql-server-linux:2017-latest
-  ports:
-    - ${MSSQL_PORT}:1433
-  environment:
-  - ACCEPT_EULA=Y
-  - SA_PASSWORD=${SA_PASSWORD}
-  volumes:
-    - mssqldb-vol:/var/opt/mssql/data
+version: "2"
+
+services:
+  mssql:
+    image: microsoft/mssql-server-linux:2017-latest
+    ports:
+      - ${MSSQL_PORT}:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=${SA_PASSWORD}
+    volumes:
+      - mssqldb-vol:/var/opt/mssql/data
+
+volumes:
+  mssqldb-vol:

@@ -24,9 +24,3 @@
       description: |
         sets the superuser password for PostgreSQL. The default superuser is defined by the <<Postgres user>> variable
       default: "postgres"
-    - variable: "uiport"
-      type: "integer"
-      label: "Adminer UI Port"
-      description: |
-        Adminier UI Port
-      default: "8080"

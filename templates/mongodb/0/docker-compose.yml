@@ -1,7 +1,13 @@
-MongoDB:
-  image: mongo:latest
-  ports:
-    - "${MONGODB_PORT}:27017"
-  volumes:
-    - mongodb-vol:/data/db
-  restart: always
+version: "2"
+
+services:
+  mongodb:
+    image: mongo:3.7
+    ports:
+      - "${MONGODB_PORT}:27017"
+    volumes:
+      - mongodb-vol:/data/db
+    restart: always
+
+volumes:
+  mongodb-vol:
