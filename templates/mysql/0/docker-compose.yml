@@ -16,3 +16,4 @@ services:
 
 volumes:
   mysqldb-vol:
+    driver: local
