@@ -13,3 +13,4 @@ services:
 
 volumes:
   kdb-vol:
+    driver: local    

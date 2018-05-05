@@ -11,3 +11,4 @@ services:
 
 volumes:
   mongodb-vol:
+    driver: local
