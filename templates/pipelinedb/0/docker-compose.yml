@@ -1,6 +1,13 @@
-pipelinedb:
-  image: pipelinedb/pipelinedb:latest
-  ports:
-    - ${PIPELINEDB_PORT}:5432/tcp
-  volumes:
-  - pipelinedb-vol:/mnt/pipelinedb
+version: "2"
+
+services:
+  pipelinedb:
+    image: pipelinedb/pipelinedb:0.9.9
+    ports:
+      - ${PIPELINEDB_PORT}:5432/tcp
+    volumes:
+      - pipelinedb-vol:/mnt/pipelinedb
+
+volumes:
+  pipelinedb-vol:
+    driver: local
