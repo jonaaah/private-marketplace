@@ -10,7 +10,7 @@
     default: 9200
     type: int
   - variable: RESTART
-    description: 'Application restart option'
+    description: 'Application restart option: no, always, on-failure'
     label: 'Restart:'
     required: true
     default: "no"

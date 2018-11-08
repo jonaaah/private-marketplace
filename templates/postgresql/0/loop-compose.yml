@@ -25,7 +25,7 @@
         sets the superuser password for PostgreSQL. The default superuser is defined by the <<Postgres user>> variable
       default: "postgres"
   - variable: RESTART
-    description: 'Application restart option'
+    description: 'Application restart option: no, always, on-failure'
     label: 'Restart:'
     required: true
     default: "no"
