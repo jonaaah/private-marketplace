@@ -21,3 +21,10 @@
     required: true
     default: secret-key
     type: string
+  - variable: RESTART
+    description: 'Application restart option'
+    label: 'Restart:'
+    required: true
+    default: "no"
+    type: string
+

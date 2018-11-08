@@ -33,3 +33,9 @@
     required: true
     default: loopedge-s3cr3t!
     type: string
+  - variable: RESTART
+    description: 'Application restart option'
+    label: 'Restart:'
+    required: true
+    default: "no"
+    type: string

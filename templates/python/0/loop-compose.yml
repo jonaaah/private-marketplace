@@ -9,4 +9,10 @@
     required: true
     default: "~/"
     type: string
+  - variable: RESTART
+    description: 'Application restart option'
+    label: 'Restart:'
+    required: true
+    default: "no"
+    type: string
 

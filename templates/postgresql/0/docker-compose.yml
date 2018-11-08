@@ -3,7 +3,7 @@ version: "2"
 services:
   postgres:
     image: postgres:9.6.5
-    restart: always
+    restart: ${RESTART}
     environment:
       - POSTGRES_DB=${dbname}
       - POSTGRES_USER=${dbuser}

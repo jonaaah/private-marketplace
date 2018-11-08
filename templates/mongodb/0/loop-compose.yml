@@ -9,3 +9,9 @@
     required: true
     default: 27017
     type: int
+  - variable: RESTART
+    description: 'Application restart option'
+    label: 'Restart:'
+    required: true
+    default: "no"
+    type: string
