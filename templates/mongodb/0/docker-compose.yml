@@ -7,7 +7,7 @@ services:
       - "${MONGODB_PORT}:27017"
     volumes:
       - mongodb-vol:/data/db
-    restart: always
+    restart: ${RESTART}
 
 volumes:
   mongodb-vol:

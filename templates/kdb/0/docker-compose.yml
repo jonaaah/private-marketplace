@@ -9,7 +9,7 @@ services:
       - PORT=${KDB_PORT}
       - VIRTUALHOST=${KDB_VIRTUALHOST}
     command: --config=/etc/kdb/kdb.ini
-    restart: always
+    restart: ${RESTART}
 
 volumes:
   kdb-vol:

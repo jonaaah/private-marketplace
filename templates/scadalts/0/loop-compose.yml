@@ -9,3 +9,9 @@
     required: true
     default: 8080
     type: int
+  - variable: RESTART
+    description: 'Application restart option: no, always, on-failure'
+    label: 'Restart:'
+    required: true
+    default: "no"
+    type: string
