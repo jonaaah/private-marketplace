@@ -16,9 +16,9 @@
     default: loopedge-s3cr3t!
     type: string
   - variable: RESTART
-    description: 'Application restart option: no, always, on-failure'
+    description: 'Application restart option: always, on-failure'
     label: 'Restart:'
     required: true
-    default: "no"
+    default: "always"
     type: string
     
