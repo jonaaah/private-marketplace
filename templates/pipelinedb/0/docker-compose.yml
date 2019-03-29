@@ -7,7 +7,8 @@ services:
       - ${PIPELINEDB_PORT}:5432/tcp
     volumes:
       - pipelinedb-vol:/mnt/pipelinedb
-    restart: ${RESTART}  
+    restart: ${RESTART}
+    network_mode: bridge
 
 volumes:
   pipelinedb-vol:

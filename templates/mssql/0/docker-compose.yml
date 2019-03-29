@@ -11,7 +11,8 @@ services:
     volumes:
       - mssqldb-vol:/var/opt/mssql/data
     restart: ${RESTART}
+    network_mode: bridge
 
 volumes:
   mssqldb-vol:
-    driver: local    
+    driver: local
