@@ -10,7 +10,8 @@ services:
       - VIRTUALHOST=${KDB_VIRTUALHOST}
     command: --config=/etc/kdb/kdb.ini
     restart: ${RESTART}
+    network_mode: bridge
 
 volumes:
   kdb-vol:
-    driver: local    
+    driver: local

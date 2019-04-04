@@ -13,7 +13,8 @@ services:
     ports:
       - ${ES_PORT}:9200
     restart: ${RESTART}
+    network_mode: bridge
 
 volumes:
   elasticsearch-vol:
-    driver: local    
+    driver: local

@@ -12,6 +12,7 @@ services:
       - 5432:5432/tcp
     volumes:
       - postgres-vol:/var/lib/postgresql/data
+    network_mode: bridge
 
 volumes:
   postgres-vol:

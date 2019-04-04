@@ -12,7 +12,8 @@ services:
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
     restart: ${RESTART}
     volumes:
-      - mysqldb-vol:/var/lib/mysql 
+      - mysqldb-vol:/var/lib/mysql
+    network_mode: bridge
 
 volumes:
   mysqldb-vol:

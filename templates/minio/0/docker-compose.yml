@@ -12,6 +12,7 @@ services:
      MINIO_SECRET_KEY: ${MINIO_SECRET_KEY}
     command: server /data
     restart: ${RESTART}
+    network_mode: bridge
 
 volumes:
   minio-vol:
