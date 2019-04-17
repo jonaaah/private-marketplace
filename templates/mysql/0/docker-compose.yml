@@ -10,7 +10,7 @@ services:
       - MYSQL_DATABASE=${MYSQL_DATABASE}
       - MYSQL_USER=${MYSQL_USER}
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
-    restart: ${RESTART}
+    restart: "${RESTART}"
     volumes:
       - mysqldb-vol:/var/lib/mysql
     network_mode: bridge

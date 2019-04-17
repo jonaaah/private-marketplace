@@ -16,7 +16,7 @@
     default: localhost
     type: string
   - variable: RESTART
-    description: 'Application restart option: always, on-failure'
+    description: 'Application restart option: no, always, on-failure'
     label: 'Restart:'
     required: true
     default: "always"

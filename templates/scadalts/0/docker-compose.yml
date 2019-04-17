@@ -7,5 +7,5 @@ services:
       - ${SCADALTS_PORT}:8080
     command:
       - "/root/start.sh"
-    restart: ${RESTART}
+    restart: "${RESTART}"
     network_mode: bridge

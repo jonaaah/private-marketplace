@@ -7,8 +7,8 @@ services:
       - "${MONGODB_PORT}:27017"
     volumes:
       - mongodb-vol:/data/db
-    restart: ${RESTART}
     network_mode: bridge
+    restart: "${RESTART}"
 
 volumes:
   mongodb-vol:

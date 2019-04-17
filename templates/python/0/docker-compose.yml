@@ -3,7 +3,7 @@ version: "2"
 services:
   python:
     image: python:2.7-jessie
-    restart: ${RESTART}
+    restart: "${RESTART}"
     stdin_open: true
     tty: true
     volumes:
