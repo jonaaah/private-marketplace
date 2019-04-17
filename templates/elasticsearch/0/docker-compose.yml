@@ -12,7 +12,7 @@ services:
       - elasticsearch-vol:/usr/share/elasticsearch/data
     ports:
       - ${ES_PORT}:9200
-    restart: ${RESTART}
+    restart: "${RESTART}"
 
 volumes:
   elasticsearch-vol:

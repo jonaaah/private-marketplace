@@ -10,7 +10,7 @@ services:
       - SA_PASSWORD=${SA_PASSWORD}
     volumes:
       - mssqldb-vol:/var/opt/mssql/data
-    restart: ${RESTART}
+    restart: "${RESTART}"
 
 volumes:
   mssqldb-vol:
