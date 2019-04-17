@@ -10,8 +10,9 @@ services:
       - SA_PASSWORD=${SA_PASSWORD}
     volumes:
       - mssqldb-vol:/var/opt/mssql/data
+    network_mode: bridge
     restart: "${RESTART}"
 
 volumes:
   mssqldb-vol:
-    driver: local    
+    driver: local

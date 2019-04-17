@@ -14,8 +14,8 @@
       type: "string"
       label: "Postgres user"
       description: |
-        is used in conjunction with POSTGRES_PASSWORD to set a user and its password. 
-        This will create the specified user with superuser power and a database with the same name. 
+        is used in conjunction with POSTGRES_PASSWORD to set a user and its password.
+        This will create the specified user with superuser power and a database with the same name.
         If it is not specified, then the default user of postgres will be used.
       default: "postgres"
     - variable: "dbpassword"

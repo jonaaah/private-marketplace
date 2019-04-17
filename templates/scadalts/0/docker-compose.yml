@@ -1,7 +1,11 @@
-scadalts:
-  image: dockergb/scadalts-dev
-  ports:
-    - ${SCADALTS_PORT}:8080
-  command:
-    - "/root/start.sh"
-  restart: "${RESTART}"
+version: "2"
+
+services:
+  scadalts:
+    image: dockergb/scadalts-dev
+    ports:
+      - ${SCADALTS_PORT}:8080
+    command:
+      - "/root/start.sh"
+    restart: "${RESTART}"
+    network_mode: bridge

@@ -21,4 +21,3 @@
     required: true
     default: "always"
     type: string
-

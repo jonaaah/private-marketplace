@@ -12,8 +12,9 @@ services:
       - elasticsearch-vol:/usr/share/elasticsearch/data
     ports:
       - ${ES_PORT}:9200
+    network_mode: bridge
     restart: "${RESTART}"
 
 volumes:
   elasticsearch-vol:
-    driver: local    
+    driver: local
